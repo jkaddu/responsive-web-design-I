@@ -244,6 +244,13 @@ nav a:hover {
   border-top: 1px solid black;
   margin-bottom: 1%;
 }
+.index-footer a {
+  text-decoration: none;
+  color: black;
+}
+.index-footer a:hover {
+  text-decoration: underline;
+}
 .copy {
   text-align: center;
   margin: 5% auto 0;
@@ -263,6 +270,9 @@ nav a:hover {
   .image {
     width: 25%;
   }
+  .innovation {
+    font-size: 7rem;
+  }
   .middle div {
     margin-right: 2%;
   }
@@ -277,10 +287,6 @@ nav a:hover {
 }
 
 @media (max-width: 480px) {
-  body {
-    background-color: yellow;
-  }
-
   nav {
     display: flex;
     flex-direction: column-reverse;
