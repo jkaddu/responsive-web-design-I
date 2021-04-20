@@ -294,4 +294,22 @@ nav a:hover {
   .image {
     margin: 2% auto;
   }
+
+  .middle {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .middle div {
+    width: 100%;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom div {
+    width: 100%;
+  }
 }
