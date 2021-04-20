@@ -263,6 +263,9 @@ nav a:hover {
   .image {
     width: 25%;
   }
+  .middle div {
+    margin-right: 2%;
+  }
   .image2 {
     display: none;
   }
@@ -270,5 +273,25 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-color: yellow;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  nav a {
+    border-top: 1px solid black;
+    width: 100%;
+  }
+  .image {
+    margin: 2% auto;
   }
 }
