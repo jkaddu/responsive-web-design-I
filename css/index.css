@@ -1,3 +1,274 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flex box */
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+}
+nav a {
+  font-size: 2rem;
+  width: 12%;
+  margin: 1% auto;
+  padding: 2%;
+  color: gray;
+  text-decoration: none;
+  text-align: center;
+}
+
+.image {
+  padding: 1%;
+  width: 17%;
+  margin: 0 0 0 5%;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.top {
+  display: flex;
+  width: 100%;
+  margin: 7% auto;
+}
+
+.innovation {
+  margin: 5% 0 0 0;
+  width: 50%;
+  text-align: center;
+  font-size: 8rem;
+}
+
+.innovation button {
+  background: white;
+  padding: 1% 7%;
+  vertical-align: top;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.innovation button:hover {
+  background: black;
+  color: white;
+}
+
+.image2 {
+  width: 50%;
+}
+
+.image3 {
+  width: 100%;
+}
+.middle {
+  display: flex;
+  width: 100%;
+  border-top: 1px solid black;
+}
+.middle div {
+  font-size: 2rem;
+  width: 50%;
+  padding: 3% 0;
+}
+.bottom {
+  display: flex;
+}
+.bottom div {
+  width: 30%;
+  font-size: 2rem;
+  padding: 3% 0;
+  margin-right: 3%;
+}
+.index-footer {
+  font-size: 2rem;
+  padding: 5% 0;
+  border-top: 1px solid black;
+  margin-bottom: 1%;
+}
+.copy {
+  text-align: center;
+  margin: 5% auto 0;
+}
+
+/* media queries */
+
+@media (max-width: 769px) {
+  html {
+    font-size: 0.5rem;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .image {
+    width: 25%;
+  }
+  .image2 {
+    display: none;
+  }
+  .top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
